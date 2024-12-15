@@ -5,7 +5,11 @@
 
     <bean id="animal" class="org.example.Animal">
         <property name="age" value="25"></property>
+        <property name="mouth1" ref="mouth_class"></property>
 
+    </bean>
+
+    <bean id="mouth_class" class="org.example.Mouth">
     </bean>
 
 </beans>

@@ -14,8 +14,7 @@ public class App
         Animal obj= (Animal) context.getBean("animal");
         System.out.println(obj.getAge());
 
-        Animal obj2= (Animal) context.getBean("animal");
-        obj2.dog();
+        obj.dog();
 
 
     }
