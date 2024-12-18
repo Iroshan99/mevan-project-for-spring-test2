@@ -2,13 +2,13 @@ package org.example;
 
 public class Animal {
     private int age;
-    private Mouth mouth1;
+    private Organs org;
 
-    public Animal(int age,Mouth mouth1) {
-        System.out.println("constructor is called");
-        this.age = age;
-        this.mouth1=mouth1;
-    }
+    //public Animal(int age,Mouth mouth1) {
+        //System.out.println("constructor is called");
+        //this.age = age;
+      //  this.mouth1=mouth1;
+    //}
 
     public int getAge() {
         return age;
@@ -19,17 +19,21 @@ public class Animal {
         this.age = age;
     }
 
-    public Mouth getMouth1() {
-        return mouth1;
+    public Organs getOrg() {
+        return org;
     }
 
-    public void setMouth1(Mouth mouth1) {
-        this.mouth1 = mouth1;
+    public void setOrg(Organs org) {
+        this.org = org;
     }
 
     public void dog(){
-        mouth1.loadMouth();
+        org.loadMouth();
         System.out.println("dog barks");
+
+        org.loadIyes();
+        System.out.println("dog sees");
+
 
     }
 }
