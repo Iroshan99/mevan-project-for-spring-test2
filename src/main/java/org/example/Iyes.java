@@ -1,8 +1,9 @@
 package org.example;
 
-public abstract class Iyes implements Organs{
+public class Iyes implements Organs{
 
-    public void loadIyes(){
+    public void loadOrgans(){
         System.out.println("loading the iyes");
+        System.out.println("dog sees");
     }
 }

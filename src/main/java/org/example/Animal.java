@@ -28,11 +28,7 @@ public class Animal {
     }
 
     public void dog(){
-        org.loadMouth();
-        System.out.println("dog barks");
-
-        org.loadIyes();
-        System.out.println("dog sees");
+        org.loadOrgans();
 
 
     }

@@ -3,13 +3,18 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="animal" class="org.example.Animal">
+    <bean id="animal" class="org.example.Animal" autowire="byName">
+        <property name="age" value="21"></property>
         <!-- <constructor-arg value="21" name="age" index="0"></constructor-arg> -->
         <!--<constructor-arg ref="mouth_class" index="1"></constructor-arg> -->
 
     </bean>
 
-    <bean id="mouth_class" class="org.example.Mouth">
+    <bean id="org1" class="org.example.Mouth">
+    </bean>
+
+    <bean id="org" class="org.example.Iyes">
+
     </bean>
 
 </beans>
