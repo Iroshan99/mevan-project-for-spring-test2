@@ -5,7 +5,7 @@
 
     <bean id="animal" class="org.example.Animal">
         <constructor-arg value="21" name="age" index="0"></constructor-arg>
-        <property name="mouth1" ref="mouth_class"></property>
+        <constructor-arg ref="mouth_class" index="1"></constructor-arg>
 
     </bean>
 
