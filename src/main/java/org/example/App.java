@@ -14,7 +14,7 @@ public class App
     public static void main( String[] args ) {
         ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Mouth mo= (Mouth) context.getBean("mouth");
+        Mouth mo=context.getBean("dog",Mouth.class);
         mo.loadOrgans();
 
         //Animal obj= (Animal) context.getBean("animal");
