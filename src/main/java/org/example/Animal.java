@@ -4,6 +4,10 @@ public class Animal {
     private int age;
     private Mouth mouth1;
 
+    public Animal(int age) {
+        System.out.println("constructor is called");
+        this.age = age;
+    }
 
     public int getAge() {
         return age;

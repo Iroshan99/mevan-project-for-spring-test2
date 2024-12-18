@@ -4,7 +4,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="animal" class="org.example.Animal">
-        <property name="age" value="25"></property>
+        <constructor-arg value="21" name="age" index="0"></constructor-arg>
         <property name="mouth1" ref="mouth_class"></property>
 
     </bean>
