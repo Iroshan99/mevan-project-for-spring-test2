@@ -9,7 +9,6 @@ public class Animal {
     private int age;
 
     @Autowired
-    @Qualifier("mouth")
     private Organs org;
 
     //public Animal(int age,Mouth mouth1) {
