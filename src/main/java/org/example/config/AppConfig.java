@@ -1,10 +1,13 @@
 package org.example.config;
 
 import org.example.Animal;
+import org.example.Iyes;
 import org.example.Mouth;
 import org.example.Organs;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
@@ -24,5 +27,10 @@ public class AppConfig {
         return new Mouth();
     }
 
+    @Bean
+    @Primary
+    public Iyes iye(){
+        return new Iyes();
+    }
 
 }
