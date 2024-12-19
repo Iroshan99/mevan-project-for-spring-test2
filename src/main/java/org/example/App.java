@@ -14,8 +14,11 @@ public class App
     public static void main( String[] args ) {
         ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Mouth mo=context.getBean("dog",Mouth.class);
+        Mouth mo=context.getBean(Mouth.class);
         mo.loadOrgans();
+
+        Mouth mo1=context.getBean(Mouth.class);
+        mo1.loadOrgans();
 
         //Animal obj= (Animal) context.getBean("animal");
         //System.out.println(obj.getAge());
