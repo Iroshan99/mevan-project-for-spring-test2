@@ -1,5 +1,8 @@
 package org.example;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Animal {
     private int age;
     private Organs org;
